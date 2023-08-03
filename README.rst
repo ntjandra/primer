@@ -17,7 +17,7 @@ Run the project locally to see how it will look.
 
 2. Once the site is built, navigate to the homepage at ``build/html/index.html``.
 
-3. You can shortcut open it in python with ``python -m webbrowser build/html/index.html``.
+3. You can shortcut open it in python with ``python -m webbrowser $(PWD)/build/html/index.html`` on bash.
 
 **Note: If you're using a theme, you will need to import it or comment out ``html_theme = 'sphinx_rtd_theme'`` from the ``conf.py`` file.**
 
