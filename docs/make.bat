@@ -2,12 +2,13 @@
 
 pushd %~dp0
 
-REM Command file for Sphinx documentation
+@REM Command file for Sphinx documentation
 
 if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
 )
-set SOURCEDIR=source
+@REM Due to changes, the build doesn't work if index.rst isn't in root, aka source is root.
+set SOURCEDIR=.
 set BUILDDIR=build
 
 if "%1" == "" goto help
