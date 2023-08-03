@@ -1,9 +1,12 @@
-Template for the Read the Docs tutorial
+Docs for Primer
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+Hosted Pages:
 
-Read the tutorial here:
+Primer: https://primer.readthedocs.io/
+Project: https://readthedocs.org/projects/primer/
 
-https://docs.readthedocs.io/en/stable/tutorial/
+Credits
+=======
+
+Created with the ReadTheDocs Template: https://docs.readthedocs.io/en/stable/tutorial/
