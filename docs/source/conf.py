@@ -11,6 +11,8 @@ version = '0.1.0'
 
 # -- General configuration
 
+master_doc = 'index' # Explicitly state index.rst is the root/master doc.
+
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
@@ -29,7 +31,7 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'sphinx_rtd_theme'
+# html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
-epub_show_urls = 'footnote'
+# epub_show_urls = 'footnote'
