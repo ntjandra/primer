@@ -1,7 +1,7 @@
 Development Steps
 #################
 
-Hosting
+Site Hosting
 =======
 
 Primer: https://primer.readthedocs.io
@@ -11,9 +11,9 @@ Project: https://readthedocs.org/projects/primer
 Local Run
 =========
 
-Run the project locally to see how it will look. 
+Run the project locally from the root directory.  
 
-1. Build the project using the ``make.bat`` in ``/docs/`` with ``./make.bat html``.
+1. Build the project using the ``make.bat`` with ``./docs/make.bat html``.
 
 2. Once the site is built, navigate to the homepage at ``build/html/index.html``.
 

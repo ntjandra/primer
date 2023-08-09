@@ -13,6 +13,11 @@ version = '0.1.0'
 
 master_doc = 'index' # Explicitly state index.rst is the root/master doc.
 
+# -- Allow Non-Published Packages
+import os
+import sys
+sys.path.insert(0, os.path.abspath('..'))
+
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',

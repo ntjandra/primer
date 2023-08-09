@@ -1,22 +1,20 @@
-Welcome to Lumache's documentation!
-===================================
+Welcome to ActiveRPG's Primer
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Check out the :doc:`srd` section for further information on the rules.
 
 .. note::
 
    This project is under active development.
 
-Contents
---------
+Table of Contents
+-----------------
 
 .. toctree::
+   :maxdepth: 2
+   :glob:
 
    usage
+   setting/*
    api
+   Reference <srd>
+   
