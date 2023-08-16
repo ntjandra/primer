@@ -13,6 +13,11 @@ build:
     # nodejs: "20"
     # rust: "1.70"
     # golang: "1.20"
+    
+  # Overide the default build of Sphinx to use the makefile instead.
+  jobs:
+    post_install:
+    - make html
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
