@@ -5,8 +5,9 @@
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = .
-BUILDDIR      = build
-INTERNALDIR   = hidden
+# Swap these for the build-script to deploy the hidden version.
+BUILDDIR      = hidden
+INTERNALDIR   = build
 
 # Put it first so that "make" without argument is like "make help".
 help:
