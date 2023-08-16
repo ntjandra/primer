@@ -5,9 +5,8 @@
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = .
-# Swap these for the build-script to deploy the hidden version.
-BUILDDIR      = hidden
-INTERNALDIR   = build
+BUILDDIR      = build
+INTERNALDIR   = build # Build internal inside build to replace.
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -15,13 +14,12 @@ help:
 
 .PHONY: help Makefile
 
-# Storyteller (Admin) version
-internalhtml:
-	$(SPHINXBUILD) -b html "$(SOURCEDIR)" -t storyteller "$(INTERNALDIR)" $(SPHINXOPTS) $(O)
+html:
+	$(SPHINXBUILD) -b html "$(SOURCEDIR)" -t storyteller "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: internalhtml
+.PHONY: html
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
-	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" -t storyteller "$(BUILDDIR)" $(SPHINXOPTS) $(O)
