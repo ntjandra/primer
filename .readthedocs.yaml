@@ -18,7 +18,7 @@ build:
   # Add relative path to Makefile
   jobs:
     post_build:
-    - docs/make.bat html
+    - sphinx-build -b html . -t storyteller build  
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
