@@ -1,34 +1,17 @@
 Usage
 =====
 
-.. _installation:
+Recipes
+-------
 
-Installation
-------------
+To retrieve a list of ingredients,
+you can use the ``primer.get_random_ingredients()`` function:
 
-To use Lumache, first install it using pip:
+.. autofunction:: primer.get_random_ingredients
 
-.. code-block:: console
-
-   (.venv) $ pip install lumache
-
-Creating recipes
-----------------
-
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
-
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
+The ``kind`` parameter should be either ``"cook"``, ``"craft"``,
+or ``"consume"``. Otherwise, :py:func:`primer.get_random_ingredients`
 will raise an exception.
 
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+.. autoexception:: primer.InvalidKindError
 
