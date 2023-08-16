@@ -28,6 +28,7 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
+hidden/
 develop-eggs/
 dist/
 downloads/
