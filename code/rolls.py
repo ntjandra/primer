@@ -2,6 +2,7 @@
 Rolls - Dice rolling for ActiveRPG
 """
 
+
 import random
 
 __version__ = "0.1.0"
@@ -26,5 +27,4 @@ def roll_story(advantages=0, disadvantages=0):
     if  (advantages > 3) or (advantages < 0) or (disadvantages > 3) or (disadvantages < 0):
         return InvalidNumberError
     return random.randint(1+advantages, 4-disadvantages)
-
 

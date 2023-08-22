@@ -1,6 +1,7 @@
 """
-Primer - Python library for ActiveRPG. Currently Private (not on Pip)
+Primer - Python library for ActiveRPG.
 """
+
 
 __version__ = "0.1.0"
 
@@ -8,7 +9,6 @@ __version__ = "0.1.0"
 class InvalidKindError(Exception):
     """Raised if the kind is invalid."""
     pass
-
 
 def get_random_ingredients(kind=None):
     """
@@ -28,3 +28,4 @@ def get_random_ingredients(kind=None):
     if (kind is "consume"):
         return ["lesser", "greater", "major"]
     return InvalidKindError
+
