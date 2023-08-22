@@ -1,8 +1,10 @@
 API
 ===
 
-Related packages for the ActiveRPG Campaign
+Related package modules for the ActiveRPG Campaign
 
+Modules
+-------
 .. autosummary::
 
    :toctree: generated
@@ -13,4 +15,4 @@ Related packages for the ActiveRPG Campaign
 
 Primer is used for campaign related generation, such as an encyclopedia of values.
 
-Rolls are meant as a helpful package for interactions in the camapign.
+Rolls are meant to quicken interactions that involve dice and modifiers.
