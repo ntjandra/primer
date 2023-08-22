@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Primer'
+project = 'ActiveRPG'
 copyright = '2023, Ntjandra'
 author = 'Ntjandra'
 
@@ -13,10 +13,10 @@ version = '0.1.0'
 
 master_doc = 'index' # Explicitly state index.rst is the root/master doc.
 
-# -- Allow Non-Published Packages
+# -- Allow Non-Published Packages with path to packages.
 import os
 import sys
-sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, os.path.abspath('../code'))
 
 extensions = [
     'sphinx.ext.duration',
